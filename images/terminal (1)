@@ -1,0 +1,39 @@
+sudocd-UBAH DIRECTORY
+pwd-print working directory
+ls-list daftar dan folder
+ls-a
+ls(-a)
+mkdir-buat directory
+rmdir-hapus directory
+ctrl+Alt+f1-f6-TUI (tty1-6)
+ctrl+Alt+f7-mengembalikan GUI
+ssh root@192.168.56.1
+ics - linux mint
+sysctl 
+sudo sysctl
+sudo nano /etc/sysctl.conf
+*di tkj12 !!!!
+sudo sysctl -p
+sudo iptables -t nat -A POSTROUTING -o enp2s0 -j MASQUERADE
+sudo iptables save
+- Install Paket DHCP SERVER
+dnf install dhcp-server -y
+- Setting file konfigurasinya
+sudo nano /etc/dhcp/dhcpd.conf
+salin ini :
+option domain-name "guru.tkj";
+option domain-name-servers 192.168.25.1, 8.8.8.8, 8.8.4.4;
+
+default-lease-time 600;
+max-lease-time 7200;
+
+# A slightly different configuration for an internal subnet.
+subnet 192.168.25.0 netmask 255.255.255.0 {
+  range 192.168.25.5 192.168.25.225;
+  option routers 192.168.25.1;
+  option broadcast-address 192.168.25.255;
+}
+start dhcpd
+enable dhcpd
+
+

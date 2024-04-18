@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form data siswa</title>
+    <link rel="stylesheet" href="images/download.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Formulir data siswa</h1>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="">Nama lengkap</label>
+            <input type="text" name="Nama" required autofocus>
+        </div>
+        <div>
+            <label for="">Jenis kelamin</label>
+            <input type="radio" name="jk" value="Laki-Laki" required>Laki-Laki
+            <input type="radio" name="jk" value="Perempuan">Perempuan
+        </div>
+        <div>
+            <label for="">Alamat</label>
+            <textarea name="alamat" cols="50" rows="8"></textarea>
+        </div>
+        <div>
+            <label for="">Tempat,tanggal lahir</label>
+            <input type="text" name="Tempat lahir">
+            <input type="date" name="Tanggal lahir">
+        </div>
+        <div>
+            <label for="">Jurusan</label>
+            <select name="Jurusan" required>
+                <option value="">Pilih jurusan</option>
+                <option value="Tata Busana">Tata Busana</option>
+                <option value="fotoghrafi dan vidioghrafi">Fotoghrafi dan vidioghrafi</option>
+                <option value="Desain grafis">Desain grafis</option>
+                <option value="Teknik komputer dan jaringan">Teknik komputer dan jaringan</option>
+                <option value="Aplikasi perkantoran">Aplikasi perkantoran</option>
+                <option value="Teknik sepeds motor">Teknik sepeda motor</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Hobi</label>
+            <input type="checkbox" name="Menulis" id="Menulis">
+            <input type="checkbox" name="Membaca" id="Membaca">
+        </div>
+        <div>
+            <label for="">email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="">HP</label>
+            <input type="number" name="hp">
+        </div>
+        <div>
+            <input type="Reset">
+            <input type="submit" value="simpan" name="simpan">
+        </div>
+</body>
+</html>
